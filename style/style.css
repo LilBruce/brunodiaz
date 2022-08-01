@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        display:flex
+        flex-direction:column;        
+        background-color:brown;
+    }
+header{
+    font-size:large;
+    display:grid;
+    justify-content: center;
+
+}
+header{
+    color:blue
+}
+header nav ul li{
+    list-style-type:none;
+    text-decoration:none;
+}
+
+nav ul, .comunidad, .productos , .asesoria , footer {
+    color: antiquewhite;
+    border: 3px black solid;
+
+}
+
+footer{
+    background-color:blue;
+    margin-top:0px;
+
+}
+
+ /*declarando areas para la grilla de GRID*/
+
+header{
+    grid-area:header;
+}
+nav{
+    grid-area:nav;
+}
+
+.comunidad{
+    grid-area:comunidad;
+}
+
+.productos{
+    grid-area:productos;
+
+}
+.asesoria{
+    grid-area:asesoria;
+
+}
+
+footer{
+    grid-area:footer;
+
+}
+
+.grilla_1{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "comunidad"
+    "productos"
+    "asesoria"
+    "footer";
+    margin-bottom: 5vh;
+    gap:20px;
+
+    background-color: brown;
+
+}
+
+footer{
+    margin-top: 0px;
+}
+
+/* MEDIA QUERIES*/
+
+@media (min-width:500px){
+    
+    .grilla_1{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "comunidad"
+        "asesoria"
+        "productos"
+        "footer";
+    
+        background-color: rgb(0, 0, 0);
+    }
+    nav ul li a{
+        color: antiquewhite;
+        text-decoration: none;
+    }
+    body {
+        background-color:black;
+
+    }
+
+    header,nav ul, p, .comunidad, .productos , .asesoria , footer {
+        color: antiquewhite;
+        border: 2px solid antiquewhite; 
+    }
+
+    iframe{
+        width: 80vh;
+        height: 40vh;
+    }
+    footer{
+        margin-top: 0px;
+    }
+
+
+}
+
+@media(min-width:768px){
+    .grilla_1{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "asesoria"
+        "comunidad"
+        "productos"
+        "footer";
+    
+        background: rgb(7,5,56);
+        background: linear-gradient(90deg, rgba(7,5,56,1) 0%, rgba(59,59,73,1) 52%, rgba(112,129,133,1) 100%);
+        gap:30px;
+    }
+
+    div a{
+        color: antiquewhite;
+        text-decoration: none;
+}
+footer{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 52%, rgba(65,64,101,1) 100%);
+}
+
+
+
+}
+
+@media(min-width:1024px){
+    .grilla_1{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "comunidad"
+        "asesoria"
+        "productos"
+        "footer";
+    
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 43%, rgba(221,68,63,1) 100%);
+        gap:20px;
+
+}
+footer{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(186,111,111,1) 0%, rgba(221,68,63,1) 100%);
+}
+}
+
+
+header{
+    display: grid;
+    grid-template-columns:40% 60%;
+    margin-top: 10%;
+
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    list-style-type: none ;
+    justify-content: end;
+}
+
+.comunidad{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:5% 30% 10% 5% 65vh;
+
+}
+.productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:10vh 10vh;
+
+}
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:10vh 10vh;
+
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+.imgmain{
+    width:25%;
+    height: auto;
+}
+.asesoria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh;
+
+}
