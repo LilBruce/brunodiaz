@@ -5,37 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Diaz ft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
 </head>
+      <body>               
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Bruno Diaz fitness</a>
 
-<!--Cuerpo de la pagina web -->
-
-    <body>
-
-        <!-- encabezado-->
-        <div class="grilla_1">
-            <header>BRUNO DIAZ Fitness </header> 
-                
-                <nav>
-                    <ul>
-                        <li>
-                        <a href="index.html">INICIO</a>
-                        </li>
-                        <li>
-                        <a href="./sections/asesorias.html">ASESORIAS</a>
-                        </li>
-                        <li>
-                        <a href="./sections/productos.html">PRODUCTOS</a>
-                        </li>
-                        <li>
-                        <a href="./sections/contacto.html">CONTACTO</a>
-                        </li>
-                        <li>
-                        <a href="./sections/soporte.html">SOPORTE</a>
-                        </li>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./sections/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./sections/productos.html">Suplementos</a></li>
+                              <li><a class="dropdown-item" href="./sections/productos.html">Accesorios</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./sections/productos.html">Merchandising</a></li>
+                            </ul>
+                            </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./sections/asesorias.html">Asesorias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sections/Contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./sections/Soporte.html">Soporte</a>
+                      </li>
                     </ul>
-                </nav>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="¿En que te puedo ayudar?" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">¡Vamos!</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
                     
 
 
@@ -52,7 +63,7 @@
                             enfocada en la superacion personal.
                         </p>
                             
-                        <h2>¡EMPEZA EL CAMBIO HOY! </h2>
+                        <h2 class="text-center">¡EMPEZA EL CAMBIO HOY! </h2>
                         
                         <div>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/eaRQF-7hhmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -65,7 +76,13 @@
 
                         <section class="productos">
                             <h2> ENCONTRA LOS MEJORES PRODUCTOS PARA TU PLAN </h2>
-                            <div class="box"> 
+                            <div class="grilla-productos"> 
+                                <div class="producto1">Producto1</div>
+                                <div class="producto2">Producto2</div>
+                                <div class="producto3">Producto3</div>
+                                <div class="producto4">Producto4</div>
+                                <div class="producto5">Producto5</div>
+
                                 <a href="./sections/productos.html" class="boton">CLICK ACA</a>
                             </div>
                         </section>
@@ -76,7 +93,10 @@
                         
                     <h2>NUESTRA ASESORIA PERSONALIZADA INCLUYE</h2>
                         
-                    <div class="box"> 
+                    <div class="grilla-asesorias"> 
+                        <div class="asesoria1">NUTRICION</div>
+                        <div class="asesoria2">SEGUIMIENTO</div>
+                        <div class="asesoria3">RUTINA</div>
                             <a href="./sections/asesorias.html" class="boton">QUIERO SUSCRIBIRME</a> 
                         </div>
                 </section>
@@ -89,11 +109,11 @@
                         <div><img src="./images/twitter-square-brands.svg" alt="twitter"></div>
 
                 <h3> Todos los derechos reservados </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quas hic itaque totam animi dolorum aspernatur magni nostrum dolor quaerat, nisi expedita! Tenetur, officia velit! Ducimus temporibus ad repellat iure!</p>
+                    <p>Visitanos en nuestras redes</p>
                 
                 </footer>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>    
 
 </html>
